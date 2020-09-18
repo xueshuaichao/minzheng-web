@@ -1,4 +1,5 @@
 import error from './error';
 import course from './course';
+import task from './task';
 
-export default [course, ...error];
+export default [task, course, ...error];

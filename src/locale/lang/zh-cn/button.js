@@ -50,4 +50,6 @@ export default {
     answerMsg: '考试答题信息',
     mobile: '移动',
     shelves: '下架',
+
+    registration: '报名名单',
 };
