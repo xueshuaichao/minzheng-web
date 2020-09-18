@@ -1,0 +1,60 @@
+@import "../../../../less/variables";
+
+.ivu-layout-sider-children {
+    overflow: hidden;
+    // width: 190px;
+    position: relative;
+}
+
+.side-menu-wrapper {
+    user-select: none;
+    .ivu-menu-item {
+        font-size: 16px;
+    }
+    .ivu-menu-submenu-title {
+        span {
+            font-size: 18px;
+        }
+    }
+    .ivu-icon {
+        font-size: 20px;
+    }
+    .common-icon {
+        position: relative;
+        top: 2px;
+    }
+    a.drop-menu-a {
+        display: inline-block;
+        padding: 6px 15px;
+        width: 100%;
+        text-align: center;
+    }
+    .side-menu {
+        overflow-y: scroll;
+        position: absolute;
+        top: 0px;
+        bottom: 0;
+        left: 0;
+        right: -17px;
+    }
+    .menu-item span {
+        // transition: all 0.2s ease 0.2s;
+    }
+    .collapsed-menu {
+        span,
+        .ivu-menu {
+            display: none;
+            // transition: all 0.2s ease;
+        }
+
+        .ivu-icon {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1660px) {
+    .ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu:nth-child(1) {
+        margin-top: 30px;
+    }
+}

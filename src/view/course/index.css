@@ -1,0 +1,19 @@
+._clear:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+.classificationbox-left {
+    width: 20%;
+    height: 600px;
+    float: left;
+    background: #ffffff;
+    padding: 20px;
+}
+.classificationbox-right {
+    width: 78%;
+    margin-left: 2%;
+    float: left;
+}

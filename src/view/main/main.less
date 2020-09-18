@@ -1,0 +1,103 @@
+@import "../../less/variables.less";
+
+#wdc-vue-mis {
+    color: @black;
+    background: @background;
+
+    .header-con {
+        background: #fff;
+        padding: 0 20px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        .item {
+            display: inline-block;
+            cursor: pointer;
+            font-size: 14px;
+            line-height: 64px;
+            margin-right: 5px;
+            color: @black;
+
+            img {
+                width: 16px;
+                margin: 24px 5px;
+                float: left;
+            }
+
+            .ivu-divider.ivu-divider-vertical {
+                height: 25px;
+                margin-left: 15px;
+            }
+        }
+    }
+
+    .main-content {
+        margin: 24px;
+        padding: 24px;
+        min-height: 700px;
+        background: white;
+        header,
+        article,
+        footer {
+            margin-bottom: 30px;
+        }
+        header {
+            display: flex;
+            .search {
+                display: flex;
+                flex: 1;
+                justify-content: flex-end;
+            }
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+        }
+
+        .mr10 {
+            margin-right: 10px;
+        }
+
+        .mr20 {
+            margin-right: 20px;
+        }
+    }
+
+    .spin-icon-load {
+        animation: ani-spin 1s linear infinite;
+    }
+
+    .spin-tips {
+        font-size: 12px;
+        line-height: 30px;
+    }
+
+    .content-wrapper {
+        padding: 20px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        min-height: 100%;
+        background: white;
+    }
+
+    .ivu-layout-content {
+        padding: 0 20px;
+    }
+
+    @keyframes ani-spin {
+        from {
+            transform: rotate(0deg);
+        }
+        50% {
+            transform: rotate(180deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+@media screen and (max-width: 1660px) {
+    #wdc-vue-mis .content-wrapper {
+        padding-top: 30px;
+    }
+}
